@@ -62,7 +62,7 @@ const Nav = () => {
     <div className="container-fluid navbar_fluid sticky-top" ref={sticky}>
       <div className="container">
         <nav className="navbar" ref={menuRef}>
-          <div className="logo">
+          <Link href={`#home`}>
             <Image
               src={"./assets/logo-1516c06a.png"}
               width={100}
@@ -70,7 +70,7 @@ const Nav = () => {
               alt=""
               className="img-fluid"
             />
-          </div>
+          </Link>
           <ul className={open ? "active" : "inactive"}>
             {navbar_links &&
               navbar_links.map((x) => {
